@@ -1,4 +1,5 @@
 import "./globals.css";
+import Navigation from "./components/Navigation";
 
 export const metadata = {
   title: "VecindApp",
@@ -29,11 +30,7 @@ export default function RootLayout({ children }) {
         <div className="container">
           {/* Menú lateral */}
           <aside>
-            <nav>
-              <a href="#">Realizar solicitud</a>
-              <a href="#">Estado de solicitud</a>
-              <a href="#">Contacto</a>
-            </nav>
+            <Navigation />
           </aside>
 
           {/* Contenido principal */}
